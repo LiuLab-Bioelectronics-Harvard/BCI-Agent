@@ -27,7 +27,7 @@ BCI-Agent is part of a broader suite of intelligent neuroscience tools developed
 
 - 🧠 [SpikeAgent](https://github.com/LiuLab-Bioelectronics-Harvard/SpikeAgent): Automated spike sorting and cell-type inference  
 - 🧬 [STAgent](https://github.com/LiuLab-Bioelectronics-Harvard/STAgent): Spatial transcriptomics-based analysis for neural data  
-- 🐭 [BehaveAgent](https://github.com/LiuLab-Bioelectronics-Harvard/BehaveAgent): Behavioral data annotation from video and sensors  
+- 🐭 [BehaveAgent](https://github.com/LiuLab-Bioelectronics-Harvard/BehaveAgent): Automates behavior analysis from video without manual intervention across species and experimental paradigms.
 
 ---
 
