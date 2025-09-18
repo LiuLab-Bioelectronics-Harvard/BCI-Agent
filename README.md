@@ -1,34 +1,20 @@
-# BCI-Agent
+# BCI-Agent v1.0
 
-**BCI-Agent** is a general-purpose AI agent designed to perform **cell-type-aware neural decoding** and interpretation for brain-computer interfaces (BCIs).  
+Autonomous AI agent for **cell-type-specific neural decoding** (BCI-Agent v1.0).
 
-Understanding neural population activity during behavior remains a fundamental challenge in neuroscience and neuroengineering. Modern recording technologies provide millisecond-scale access to hundreds of neurons simultaneously, yet interpreting these signals across time and subjects is limited by two critical factors: the inability to track individual neurons reliably across sessions and the lack of molecular identity information in extracellular recordings.
+Preprint: https://www.biorxiv.org/content/10.1101/2025.09.11.675660v1
 
-**BCI-Agent** addresses these challenges by leveraging **vision-language models (VLMs)** — pretrained on large-scale general visual and language data — to interpret electrophysiological signals (e.g., spike waveforms) as structured visual patterns. BCI-Agent integrates:
+BCI-Agent interprets extracellular spike waveforms as structured visual patterns. Leveraging vision–language models (VLMs) and LLM-based reasoning, it performs few-shot cell-type inference, validates predictions against molecular atlases for anatomical plausibility, aligns neural identities across sessions, and explains cell-type-specific dynamics during behavior. The agent can also generate analysis code and comprehensive reports, introducing a scalable path to interpretable BCI decoding.
 
-- **Few-shot cell-type classification** from waveform feature images  
-- **Multimodal reasoning and literature-grounded explanations**  
-- **Validation against molecular atlases** for anatomical plausibility  
-- **Interpretation of cell-type-specific dynamics** during behavior  
+## Code Availability
+We are finalizing the code for end users, focusing on accessibility and ease of setup. **Coming soon!**
 
-Despite never being trained on neuroscience data, the system recognizes neuronal cell-type patterns using few-shot visual prompts, and produces biologically plausible insights into long-term neural dynamics. We demonstrate its utility in:
+⭐ If you’re interested in following the development and helping us grow, consider starring this repository!
 
-- Multi-session spike sorting and neural trajectory analysis  
-- Cell-type inference with anatomical validation  
-- Functional decoding of motor learning through cell-type-specific dynamics  
+## Features
+- **Training-Free Cell-Type Inference:** Repurposes pretrained VLMs as few-shot learners to classify neuronal subtypes directly from electrophysiological features—**no task-specific fine-tuning**; validated on optogenetically tagged datasets.
+- **Atlas + Literature Validation:** Automatically cross-checks predictions against molecular atlases and synthesizes peer-reviewed evidence for transparent, biologically grounded explanations.
+- **Stable Tracking & Manifold Decoding:** Aligns neuron identities across sessions and embeds molecular identities in low-dimensional neural manifolds to decode behavior over time.
+- **Generalization Across Species & Modalities:** Robust to diverse recording setups (e.g., Neuropixels, flexible arrays) and applicable to rodent and human data with minimal supervision.
 
-BCI-Agent enables interpretable BCI decoding at the level of consistent, biologically grounded neural populations, laying the foundation for **scalable, cell-type-aware, and explainable neurotechnologies**.
-
----
-
-## 🔬 Explore the Agent-Army
-
-BCI-Agent is part of a broader suite of intelligent neuroscience tools developed by the Liu Lab:
-
-- 🧠 [SpikeAgent](https://github.com/LiuLab-Bioelectronics-Harvard/SpikeAgent): Automated spike sorting and cell-type inference  
-- 🧬 [STAgent](https://github.com/LiuLab-Bioelectronics-Harvard/STAgent): Spatial transcriptomics-based analysis for neural data  
-- 🐭 [BehaveAgent](https://github.com/LiuLab-Bioelectronics-Harvard/BehaveAgent): Automates behavior analysis from video without manual intervention across species and experimental paradigms.
-
----
-
-Stay tuned for the full BCI-Agent release — including code, documentation, and datasets!
+  Feel free to reach out: amarinllobet[at]g.[university name].edu; zuwan_lin[at]fas.[university name].edu
